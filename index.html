@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Musical Instruments - MelodyMart</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="container">
+          <ul>
+            <li>
+              <span class="brand">MelodyMart</span>
+              <input type="text" class="search-input" placeholder="Search..." />
+            </li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="#" id="loginLink"><i class="fas fa-user"></i> Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Modal container for login/register -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalTitle">Sign In or Sign Up</h2>
+        <button id="showLoginForm">Sign In</button>
+        <button id="showRegisterForm">Sign Up</button>
+
+        <form id="loginForm" style="display: none">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required />
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+          <button type="submit" id="loginButton">Login</button>
+        </form>
+
+        <form id="registerForm" style="display: none">
+          <label for="newUsername">Username</label>
+          <input type="text" id="newUsername" name="newUsername" required />
+          <label for="newPassword">Password</label>
+          <input type="password" id="newPassword" name="newPassword" required />
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            required
+          />
+          <button type="submit" id="registerButton">Register</button>
+        </form>
+      </div>
+    </div>
+
+    <section id="home" class="dark-bg">
+      <div class="container">
+        <h1>Welcome to MelodyMart</h1>
+        <p>
+          Welcome to MelodyMart, you can explore a diverse selection of musical
+          instruments and accessories, discover the perfect harmony for your
+          musical journey, and immerse yourself in the world of music with
+          confidence and joy!
+        </p>
+        <video controls>
+          <source src="video1.mp4" type="video/mp4" />
+          Your browser does not support the video tag or the file format of this
+          video.
+          <a href="video1.mp4">Download the video</a> instead.
+        </video>
+      </div>
+    </section>
+
+    <section id="about" class="light-bg">
+      <div class="container">
+        <h2>About MelodyMart</h2>
+        <p>
+          Welcome to MelodyMart, your one-stop destination for all things
+          musical! At MelodyMart, we believe in the power of music to bring joy,
+          inspire creativity, and unite people from all walks of life. Our
+          passion for music drives us to provide musicians of all levels with
+          high-quality instruments, exceptional service, and a community where
+          their love for music can flourish.
+        </p>
+        <p>
+          Founded in 2005, MelodyMart has grown from a small local store to a
+          beloved name in the music industry. Our commitment to excellence has
+          earned us the trust of countless musicians, educators, and music
+          enthusiasts. We take pride in offering a diverse range of instruments,
+          from classical to contemporary, ensuring that every customer finds the
+          perfect instrument to suit their needs and preferences.
+        </p>
+        <p>At MelodyMart, we offer:</p>
+        <ul>
+          <li>
+            A vast selection of acoustic and electric guitars, basses, and
+            accessories.
+          </li>
+          <li>
+            Comprehensive drum kits, percussion instruments, and all necessary
+            gear.
+          </li>
+          <li>
+            Keyboards, digital pianos, and synthesizers for all skill levels.
+          </li>
+        </ul>
+        <p>
+          Our team of knowledgeable and friendly staff are always on hand to
+          assist you with expert advice, whether you're choosing your first
+          instrument or looking to upgrade to a professional model. We also
+          offer repair and maintenance services to keep your instruments in top
+          playing condition.
+        </p>
+
+        <img src="abt.jpg" alt="About Us Image" />
+      </div>
+    </section>
+
+    <section id="products" class="dark-bg">
+      <div class="container">
+        <h2>Our Products</h2>
+        <div class="product">
+          <div class="product-item">
+            <img src="guitar.jpg" alt="Acoustic Guitar" />
+            <div class="description">
+              <h3>Acoustic Guitar</h3>
+              <p>
+                High-quality acoustic guitars for every level of player.
+                Discover a wide selection of tones and finishes to suit your
+                musical style.
+              </p>
+              <button class="explore-button">Explore More</button>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <img src="drums.jpg" alt="Drum Kit" />
+            <div class="description">
+              <h3>Drum Kit</h3>
+              <p>
+                Explore our drums and percussion instruments. Find the perfect
+                set for beginners and experienced drummers to unleash your
+                rhythm.
+              </p>
+              <button class="explore-button">Explore More</button>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <img src="keyboard.png" alt="Keyboard" />
+            <div class="description">
+              <h3>Keyboard</h3>
+              <p>
+                Discover keyboards and digital pianos for all skill levels.
+                Choose from a variety of brands and styles to suit your musical
+                preferences.
+              </p>
+              <button class="explore-button">Explore More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="light-bg">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>
+          Get in touch with us for inquiries, support, or to schedule a visit to
+          our store.
+        </p>
+        <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+        <p><strong>Email:</strong> support@melodymart.com</p>
+        <p><strong>Address:</strong> 123 Music Lane, Harmony City, CA 90210</p>
+      </div>
+      <img src="contact.jpg" alt="Keyboard" />
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

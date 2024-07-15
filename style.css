@@ -1,0 +1,290 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+.container {
+  width: 90%; /* Adjusted width for responsiveness */
+  max-width: 1200px; /* Maximum width for larger screens */
+  margin: 0 auto;
+  padding: 0 15px; /* Add padding for better readability */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    width: 95%; /* Adjust width for smaller screens */
+  }
+}
+
+.container h1 {
+  color: rgba(215, 95, 215, 0.708);
+}
+
+#home .container p {
+  margin-left: 90px;
+  margin-right: 90px;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+/* Adjusted styles for header and navigation */
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+header.scroll-active {
+  background-color: #151515;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #f7d3ee41;
+}
+
+/* Adjusted styles for search input and company name */
+.brand {
+  color: rgba(166, 43, 166, 0.811);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 5px;
+  font-size: 1.2em; /* Adjust font size as needed */
+  line-height: 2; /* Adjust line height for vertical spacing */
+}
+
+.search-input {
+  padding: 8px 12px;
+  border: 1px solid #111010;
+  background-color: #f1e9e928;
+  color: #f0f0f0;
+  border-radius: 4px;
+  margin-left: 8px;
+  width: 150px; /* Adjust width as needed */
+  margin-right: 270px;
+}
+
+/* Section styles */
+section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.dark-bg {
+  background-color: #1e0f19; /* Dark background */
+  color: #f4e6f0;
+}
+
+.light-bg {
+  background-color: #f4e6f0; /* Light background */
+  color: #333;
+}
+
+#about p,
+#about ul {
+  text-align: justify;
+  margin-bottom: 20px; /* Spacing between paragraphs */
+}
+
+#about h2 {
+  color: #851678;
+}
+
+#about ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  text-align: left;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between; /* Distribute items evenly */
+  flex-wrap: wrap;
+}
+
+.product-item {
+  width: calc(33% - 20px); /* Adjust width for three columns */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 1024px) {
+  .product-item {
+    width: calc(50% - 20px); /* Adjust width for two columns */
+  }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .product-item {
+    width: 100%; /* Full width for single column */
+    margin-bottom: 10px;
+  }
+}
+
+.product ul {
+  text-align: left;
+}
+
+.product-item img {
+  max-width: 100%;
+  height: 250px;
+}
+
+/* Contact section styles */
+#contact p {
+  text-align: justify;
+  margin-bottom: 10px; /* Spacing between paragraphs */
+}
+
+/* Ensure video visibility */
+video {
+  width: 75%; /* Ensure the video takes up the full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure video is not hidden by default */
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Style for Explore More button */
+/* Style for Explore More button */
+.explore-button {
+  padding: 20px 20px; /* Adjust padding for button size */
+  background-color: #d10ba042; /* Button background color */
+  color: #df9bd5b0; /* Text color */
+  border: none; /* Remove default button border */
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer; /* Cursor style on hover */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  display: block; /* Ensure button behaves as a block element */
+  margin-left: 85px;
+  margin-top: 50px;
+}
+
+.explore-button:hover {
+  background-color: #d6a2c438; /* Darker background color on hover */
+  color: #fff; /* Text color on hover */
+}
+
+#contact img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 65px auto 30px; /* Adjust margins for top, center horizontally, and bottom */
+  max-height: 300px; /* Set maximum height for the image */
+}
+
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px; /* Limit maximum width for smaller screens */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content h2 {
+  color: purple; /* Title color */
+}
+
+.modal-content form {
+  margin-top: 20px;
+}
+
+.modal-content label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal-content button[type="submit"],
+.modal-content button[type="button"] {
+  background-color: purple; /* Button background color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.modal-content button[type="submit"]:hover,
+.modal-content button[type="button"]:hover {
+  background-color: #5e2a87; /* Darker purple on hover */
+}
